@@ -1,0 +1,615 @@
+/* MAIN PAGE STYLE */
+html, body
+{
+    background: #000; 
+    font-family:"Oxygen"; 
+    font-weight:300; 
+    margin: 0;
+    padding: 0;
+}
+
+img 
+{
+  display: block;  
+  max-width: 100%;
+  height: auto;
+}
+
+.header {
+    background: #000;
+    margin: 0 auto;
+    width: 1170px;
+    overflow: hidden;
+}
+.header img {
+    margin: 40px 0;
+}
+.headerLogo
+{
+  float: left;
+  width: 30%;
+  overflow: hidden;
+}
+
+.logo
+{
+  width: 90px;
+  float: left;
+  border-radius: 15px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.titleLogo
+{
+  float: left;
+  margin-left: 20px;
+  color: white;
+  font-size: 1.9em
+}
+
+.nav
+{
+  float: right;
+  width: 70%;
+}
+
+.nav ul
+{
+  float: right;
+  margin-top: 72px;
+  margin-right: 0px;
+  padding-right: 0px;
+}
+.nav ul li
+{
+  list-style: none;
+  float:left;
+  font-size: 20px;
+  margin-left: 35px;
+}
+.nav ul li a
+{
+  font-size: 20px;
+  color: #b3b3b3;
+  text-decoration: none;
+
+}
+.nav ul li:last-child
+{
+  margin-right: 0px;
+}
+
+.nav ul li a:hover
+{
+  color: #f2f2f2;
+}
+
+.main 
+{
+    background-image:url(../img/back3.png);
+    background-size:200px 199px; 
+    padding: 20px;
+}
+
+.main .series {
+    color:#0393ff;
+}
+
+
+.main .episode 
+{
+    color: #fff;
+    font-family: "Montserrat", sans-serif;
+    margin: 0 0 40px 0;
+    text-transform: uppercase;
+}
+
+.main .description {
+    color: #fff;  
+    text-align: justify; 
+}
+
+
+.main ul{
+    margin: 30px 0 0;
+}
+
+.main ul li {
+    background: rgba(0,0,0,0.5);
+    border: 1px solid #0393ff;
+    color: #fff;
+}
+
+.list-group-item span {
+    color:#0393ff;
+    padding:0 10px 0 0;
+}    
+
+.footer {
+  background:#000;
+  padding:60px 0; 
+}
+
+.footer h3 {
+  color:#fff;
+  font-size:18px;
+  font-weight:300;  
+}
+
+.footer ul {
+  color:#0393ff; 
+  list-style:none;
+  padding-left:0px;  
+}
+
+/* SEARCH BOX STYLE */
+#custom-search-input{
+    padding: 3px;
+    border: solid 1px #E4E4E4;
+    border-radius: 6px;
+    background-color: #fff;
+}
+
+#custom-search-input input{
+    border: 0;
+    box-shadow: none;
+}
+
+#custom-search-input button{
+    margin: 2px 0 0 0;
+    background: none;
+    box-shadow: none;
+    border: 0;
+    color: #666666;
+    padding: 0 8px 0 10px;
+    border-left: solid 1px #ccc;
+}
+
+#custom-search-input button:hover{
+    border: 0;
+    box-shadow: none;
+    border-left: solid 1px #ccc;
+}
+
+#custom-search-input .glyphicon-search{
+    font-size: 23px;
+}
+
+/* FILM DETAILS STYLE*/
+.film_img
+{
+  margin: 30px 0 0;
+}
+.film_img img
+{
+  width: 131px;
+  height: 200px !important;
+}
+.notResults
+{
+  margin: 0 auto;
+  overflow: hidden;
+}
+.notResults img
+{
+  width: 300px;
+  margin: 0 auto;
+  margin-top: 40px;
+}
+.notResults h1
+{
+  text-align: center;
+  margin-top: 20px;
+  color: #b3b3b3;
+}
+.centerFilm
+{
+  margin-top: 20px;
+}
+.centerFilm2
+{
+  margin-top: 85.5px;
+}
+.header_film
+{
+  height: 400px !important;
+}
+film-listing  .filmList,
+favourite-listing  .filmList
+{
+  width: 49.05%;
+  float: left;
+  margin-right: 0px;
+  margin-left: 0px;
+}
+film-listing .filmListPar,
+favourite-listing  .filmListPar
+{
+  margin-left: 20px;
+  width: 49.05%;
+  float: left;
+  margin-right: 0px;
+}
+.filmTitle
+{
+  font-size: 24px;
+}
+.filmList .col-md-9.left, 
+.filmListPar .col-md-9.left
+{
+  margin-right: 0px;
+  width: 70%;
+  padding-right: 0px;
+}
+
+.filmList .col-md-2,
+.filmListPar .col-md-2
+{
+  width: 30%;
+  margin-left: 0px;
+  padding-left: 0px;
+}
+
+.filmList .col-md-4,
+.filmListPar .col-md-4
+{
+  width: 70%;
+  float: right;
+}
+
+.film_backdrop
+{
+    width: 100%; 
+    height: 290px; 
+    opacity: 0.8;
+    overflow: hidden; 
+    background-position: center top;
+
+}
+.poster
+{
+  width: 185px;
+  margin: 0 auto;
+  position: relative;
+  top: -200px;
+}
+.genres ul
+{
+  margin: 5px 0 0;
+}
+.genres ul li
+{
+  background: rgba(0,0,0,0.5);
+    border: 0px;
+    color: #fff;
+}
+.back
+{
+  margin-bottom: 15px;
+  background: rgba(84,84,84,0.5);
+  color: #fff;
+}
+
+.back:hover
+{
+  margin-bottom: 15px;
+  background: rgba(0,0,0,0.5);
+  color: #fff;
+}
+.mainRow .col-sm-3 a
+{
+  width: 100%;
+}
+
+/* CAROUSEL */
+.carousel {
+  height: 500px;
+  margin-bottom: 60px;
+}
+.carousel-caption {
+  z-index: 10;
+}
+.carousel .item {
+  height: 500px;
+  background-color: #777;
+}
+.carousel .item h1
+{
+  background-color: rgba(0,0,0,0.5);
+}
+.carousel-inner > .item > img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  min-width: 100%;
+  height: 500px;
+}
+
+/* ADD/REMOVE FAVOURITE BUTTON */
+.hidden
+{
+  visibility: hidden;
+}
+.add, .remove
+{
+  margin-top: 15px;
+}
+.left
+{
+  float: left;
+  padding-left: 0px;
+}
+.right
+{
+  float: right;
+}
+.rigth button
+{
+  float: right;
+  margin-top: 55px;
+}
+
+/* NAVBAR STYLE */
+.myNav
+{
+  margin-top: 40px;
+  padding-right: 0px;
+}
+.myLogo
+{
+  padding-left: 0px;
+}
+.navbar-default
+{
+  border: 1px solid black;
+  background-color: rgba(79, 80, 84, 0.8);
+}
+.navbar-default .navbar-brand,
+.navbar-default .navbar-brand:focus,
+.navbar-default .navbar-nav > li > a
+{
+    color: white;
+}
+.navbar-default .navbar-nav > .active > a,
+.navbar-default .navbar-nav > .active > a:hover,
+.navbar-default .navbar-nav > .active > a:focus
+{
+  background-color: rgba(229, 229, 229, 0.36); 
+  color: white;
+}
+.navbar-default .navbar-brand:hover,
+.navbar-default .navbar-nav > li > a:hover
+{
+    color: rgba(229, 229, 229, 0.36);
+}
+.nav
+{
+  width: 45%;
+}
+
+/* MEDIA QUERIES */
+@media (max-width: 1200px) 
+{
+  .nav
+  {
+    width: 60%;
+  }
+
+  film-listing  .filmList,
+  film-listing  .filmListPar,
+  favourite-listing  .filmList,
+  favourite-listing  .filmListPar
+  {
+    width: 48.5%;
+  }
+
+}
+@media (max-width: 991px) 
+{
+  .nav
+  {
+    width: 75%;
+  }
+  film-listing  .filmList,
+  film-listing  .filmListPar
+  {
+    width: 47.5%;
+  }
+  favourite-listing  .filmList,
+  favourite-listing  .filmListPar
+  {
+    width: 48.5%;
+  }
+  .filmTitle
+  {
+    font-size: 1.5em;
+  }
+  .filmList
+  {
+    width: 50%;
+  }
+  .centerFilm
+  {
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+  .filmList .col-md-2, 
+  .filmListPar .col-md-2
+  {
+    margin-right: 0px;
+    padding-right: 0px;
+    width: 40%;
+    float: left;
+  }
+  .filmList .col-md-4,
+  .filmListPar .col-md-4
+  {
+    width: 60%;
+  }
+
+  .filmList .film_img, 
+  .filmListPar .film_img
+  {
+    padding-right: 15px;
+  }
+
+  .filmList .col-md-9.left, 
+  .filmListPar .col-md-9.left
+  {
+    margin-right: 0px;
+    width: 50%;
+    padding-right: 0px;
+  }
+}
+@media (max-width: 768px) 
+{
+  .myNav
+  {
+    width: 80%;
+    float: right;
+  }
+  .nav
+  {
+    width: 100%;
+  }
+  .filmTitle
+  {
+    font-size: 1.3em;
+  }
+  .details
+  {
+    font-size: 0.9em;
+  }
+  .myLogo
+  {
+    padding-left: 15px;
+  }
+  .logo
+  {
+    width: 90px;
+  }
+  .main
+  {
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+  .myContainer
+  {
+    padding-right: 0px;
+    padding-left: 0px;
+  }
+
+}
+@media (max-width: 698px) 
+{
+  favourite-listing  .filmList,
+  favourite-listing  .filmListPar
+  {
+    width: 100%;
+  }
+  favourite-listing  .filmList .col-md-2,
+  favourite-listing  .filmListPar .col-md-2
+  {
+    width: 25%;
+  }
+  favourite-listing  .filmList .col-md-4,
+  favourite-listing  .filmListPar .col-md-4
+  {
+    width: 70%;
+  }
+  favourite-listing  .filmListPar
+  {
+    margin-left: 0px;
+  }
+}
+@media (max-width: 555px) 
+{
+  .myNav
+  {
+    width: 80%;
+  }
+  .nav
+  {
+    width: 90%;
+  }
+  film-listing  .filmList,
+  film-listing  .filmListPar,
+  favourite-listing  .filmList,
+  favourite-listing  .filmListPar
+  {
+    width: 100%;
+  }
+  film-listing  .filmListPar,
+  favourite-listing  .filmListPar
+  {
+    margin-left: 0px;
+  }
+  .filmList .col-md-2, 
+  .filmListPar .col-md-2
+  {
+    width: 40%;
+  }
+  .logo
+  {
+    width: 80px;
+  }
+  #navbar
+  {
+    padding-right: 0px;
+    padding-left: 0px;
+  }
+  favourite-listing  .filmList .col-md-2,
+  favourite-listing  .filmListPar .col-md-2
+  {
+    width: 30%;
+  }
+  favourite-listing  .filmList .col-md-4,
+  favourite-listing  .filmListPar .col-md-4
+  {
+    width: 60%;
+  }
+  .filmList .col-md-9 .left,
+  .filmListPar .col-md-9 .left
+  {
+    width: 80%;
+  }
+
+}
+@media (max-width: 475px) 
+{
+  .myNav
+  {
+    width: 75%;
+  }
+}
+@media (max-width: 380px) 
+{
+  .myNav
+  {
+    width: 70%;
+  }
+}
+@media (max-width: 360px) 
+{
+  .myNav
+  {
+    margin-top: 35px;
+  }
+  favourite-listing  .filmList .col-md-2,
+  favourite-listing  .filmListPar .col-md-2
+  {
+    width: 35%;
+  }
+  favourite-listing  .filmList .col-md-4,
+  favourite-listing  .filmListPar .col-md-4
+  {
+    width: 55%;
+  }
+}
+@media (max-width: 320px) 
+{
+  .myNav
+  {
+    margin-top: 30px;
+  }
+}

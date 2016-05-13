@@ -1,0 +1,40 @@
+<div class="content">
+  <div class="row">
+    <div class="col-md-12 header_film" >
+      <button class="btn btn-default back" ng-click="goBack()">
+      <span class="glyphicon glyphicon-chevron-left"></span>
+      Go back</button>
+      <div ng-if="film.backdrop_path != null ">
+        <div class="film_backdrop" style="background-image:url({{backdrop}})">
+        </div>
+      </div>
+      <div ng-if="film.backdrop_path == null ">
+        <div class="film_backdrop" style="background-image:url(img/backdrop-placeholder.png)" >
+        </div>
+      </div>
+      <div ng-if="film.poster_path != null">
+        <img class="poster" ng-src="http://image.tmdb.org/t/p/w185/{{film.poster_path}}" />
+      </div>
+      <div ng-if="film.poster_path == null">
+        <img class="poster" ng-src="img/placeholder.png" />
+      </div>
+    </div>
+               
+    <div class="col-md-8">
+      <h1 class="series">{{film.title}}</h1>
+      <p class="description">{{film.overview}}</p>
+      <form>
+        <button type="submit" class="btn btn-default back add" ng-click="addFavourite(film)"><i class="glyphicon glyphicon-heart"></i> Add Favourite</button>
+        <button type="submit" class="btn btn-default back remove" ng-click="removeFavourite()"><i class="glyphicon glyphicon-trash"></i> Remove Favourite</button>
+      </form>
+    </div>
+    <div class="col-md-4">
+      <ul class="list-group">
+        <li class="list-group-item" ng-if="film.release_date != ''"><span>Date:</span> {{film.release_date | date: 'MMM d,y' }}</li>
+        <li class="list-group-item" ng-if="film.release_date == ''"><span>Date:</span> No Date</li>
+        <li class="list-group-item"><span>Genres:</span><div  class="genres"><ul><li data-ng-repeat="genre in film.genres">{{genre.name}}</li></ul></div></li>
+        <li class="list-group-item"><span>Points:</span> {{film.vote_average}}</li>
+      </ul>
+    </div>    
+  </div>
+</div>

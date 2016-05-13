@@ -1,0 +1,54 @@
+<div ng-switch-when="true">
+  <div class="row filmList">
+    <div class="col-md-2 film_img">
+      <div ng-if="listing.poster != null">
+          <img ng-src="http://image.tmdb.org/t/p/w185/{{listing.poster}}" />
+        </div>
+        <div ng-if="listing.poster == null">
+          <img ng-src="img/placeholder.png" />
+        </div>
+    </div>     
+    <div class="col-md-4 centerFilm">
+      <h1 class="filmTitle"><a href="#/filmFavourite/{{listing.id}}">{{listing.title}}</a></h1>
+      <div class="col-md-9 left">
+        <ul class="list-group details">
+          <li class="list-group-item detail" ng-if="listing.date != ''"><span>Date:</span> {{listing.date | date: 'MMM d,y' }}</li>
+          <li class="list-group-item detail" ng-if="listing.date == ''"><span>Date:</span> No Date</li>
+          <li class="list-group-item detail"><span>Points:</span> {{listing.points}}</li>
+        </ul>
+      </div>
+      <div class="col-md-2 rigth">
+        <form>
+          <button type="submit" class="btn btn-default back remove buttonFavourite" ng-click="callback()"><i class="glyphicon glyphicon-trash"></i></button>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+<div ng-switch-default>
+  <div class="row filmListPar">
+    <div class="col-md-2 film_img">
+      <div ng-if="listing.poster != null">
+          <img ng-src="http://image.tmdb.org/t/p/w185/{{listing.poster}}" />
+        </div>
+        <div ng-if="listing.poster == null">
+          <img ng-src="img/placeholder.png" />
+        </div>
+    </div>     
+    <div class="col-md-4 centerFilm">
+      <h1 class="filmTitle"><a href="#/filmFavourite/{{listing.id}}">{{listing.title}}</a></h1>
+      <div class="col-md-9 left">
+        <ul class="list-group details">
+          <li class="list-group-item detail" ng-if="listing.date != ''"><span>Date:</span> {{listing.date | date: 'MMM d,y' }}</li>
+          <li class="list-group-item detail" ng-if="listing.date == ''"><span>Date:</span> No Date</li>
+          <li class="list-group-item detail"><span>Points:</span> {{listing.points}}</li>
+        </ul>
+      </div>
+      <div class="col-md-2 rigth">
+        <form>
+          <button type="submit" class="btn btn-default back remove buttonFavourite" ng-click="callback()"><i class="glyphicon glyphicon-trash"></i></button>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>

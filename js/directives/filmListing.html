@@ -1,0 +1,42 @@
+<div ng-switch-when="true">
+  <div class="row filmList">
+    <div class="col-md-2 film_img">
+      <div ng-if="listing.poster_path != null">
+        <img ng-src="http://image.tmdb.org/t/p/w185/{{listing.poster_path}}" />
+      </div>
+      <div ng-if="listing.poster_path == null">
+        <img ng-src="img/placeholder.png" />
+      </div>
+    </div>     
+    <div class="col-md-4 centerFilm">
+      <h1 class="filmTitle"><a href="#/film/{{listing.id}}">{{listing.title}}</a></h1>
+
+      <ul class="list-group details">
+        <li class="list-group-item detail" ng-if="listing.release_date != ''"><span>Date:</span> {{listing.release_date | date: 'MMM d,y' }}</li>
+        <li class="list-group-item detail" ng-if="listing.release_date == ''"><span>Date:</span> No Date</li>
+        <li class="list-group-item detail"><span>Points:</span> {{listing.vote_average}}</li>
+      </ul>
+    </div> 
+  </div>
+</div>
+<div ng-switch-default>
+  <div class="row filmListPar">
+    <div class="col-md-2 film_img">
+      <div ng-if="listing.poster_path != null">
+        <img ng-src="http://image.tmdb.org/t/p/w185/{{listing.poster_path}}" />
+      </div>
+      <div ng-if="listing.poster_path == null">
+        <img ng-src="img/placeholder.png" />
+      </div>
+    </div>     
+    <div class="col-md-4 centerFilm">
+      <h1 class="filmTitle"><a href="#/film/{{listing.id}}">{{listing.title}}</a></h1>
+
+      <ul class="list-group details">
+        <li class="list-group-item detail" ng-if="listing.release_date != ''"><span>Date:</span> {{listing.release_date | date: 'MMM d,y' }}</li>
+        <li class="list-group-item detail" ng-if="listing.release_date == ''"><span>Date:</span> No Date</li>
+        <li class="list-group-item detail"><span>Points:</span> {{listing.vote_average}}</li>
+      </ul>
+    </div> 
+  </div>
+</div>

@@ -1,0 +1,4 @@
+<a class="btn btn-default back" href="#/" role="button"><span class="glyphicon glyphicon-chevron-left"></span> Home</a>
+<div class="content">
+	<favourite-listing data-ng-repeat="film in films" listing="film" callback="removeFavouriteFromList(film.id)" ng-switch="$even" ng-class-even="'filmListPar'" ng-class-odd="'filmList'"></favourite-listing>
+</div>
