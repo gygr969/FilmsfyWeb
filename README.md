@@ -9,36 +9,32 @@ For download Node.js we just need go to their main page in https://nodejs.org/ a
 <h3>MongoDB</h3>
 For download and install MongoDB we use HomeBrew with our Terminal app in Mac.
 For download HomeBrew we need to write this line in our terminal prompt:
-
-<ul>
-  <li><i>/usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"</i></li>
-</ul>
+```
+/usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+```
 
 Once the HomeBrew were installed, we just need to use it to download the MongoDB.
 For download Mongo write in the terminal this few lines:
-
-<ul>
-  <li><i>sudo brew update</i></li>
-  <li><i>sudo brew install mongodb</i></li>
-</ul>
+```
+sudo brew update
+sudo brew install mongodb
+```
 
 Once we installed the Mongo we need to create the "db" directory in our machine, put this lines in the terminal:
-<ul>
-  <li><i>sudo mkdir /data/db</i></li>
-</ul>
+```
+sudo mkdir /data/db
+```
 
 <h2>Running the example</h2>
 We open a shell prompt of the therminal and put mongod (if all the packages were installed successfully, mongo start to listen conections for the DB)
 In other shell prompt we need to navigate with the terminal to our FilmsfyWeb project directory and install nodemon.
-For the installation just put this lines
-<ul>
-  <li>sudo npm install -g nodemon</li>
-</ul>
+For the installation just put this lines:
+```
+sudo npm install -g nodemon
+```
 Later we put this command to make start our server listen connections:
-
-<ul>
-  <li>nodemon server.js localhost 8080</li>
-</ul>
-
+```
+nodemon server.js localhost 8080
+```
 The server will start and start to listen.
 For execute our example just write this line in your navigator URL: http://localhost:8080
