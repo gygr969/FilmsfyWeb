@@ -22,7 +22,7 @@ For download Mongo write in the terminal this few lines:
   <li><i>sudo brew install mongodb</i></li>
 </ul>
 
-once we installed the Mongo we need to create the "db" directory in our machine, put this lines in the terminal:
+Once we installed the Mongo we need to create the "db" directory in our machine, put this lines in the terminal:
 <ul>
   <li><i>sudo mkdir /data/db</i></li>
 </ul>
