@@ -4,7 +4,7 @@ app.factory("getFilms", ['$http', function($http){
 
 	getFilms.nowPlaying = function() 
 	{
-		return $http.get("http://api.themoviedb.org/3/movie/now_playing?api_key=844fd8eb8902d0b4c467d44dabed5180")
+		return $http.get("http://api.themoviedb.org/3/movie/now_playing?api_key=YOUR_API_KEY")
 			.success(function(data) {
 	              return data; 
 	            }) 
@@ -14,7 +14,7 @@ app.factory("getFilms", ['$http', function($http){
 	};
 	getFilms.onComming = function()
 	{
-		return $http.get("http://api.themoviedb.org/3/movie/upcoming?api_key=844fd8eb8902d0b4c467d44dabed5180")
+		return $http.get("http://api.themoviedb.org/3/movie/upcoming?api_key=YOUR_API_KEY")
 			.success(function(data) { 
 	              return data; 
 	            }) 
@@ -44,7 +44,7 @@ app.factory("getFilms", ['$http', function($http){
 	}
 	getFilms.search = function(searchString)
 	{
-		return $http.get("http://api.themoviedb.org/3/search/movie?query="+searchString+"&api_key=844fd8eb8902d0b4c467d44dabed5180")
+		return $http.get("http://api.themoviedb.org/3/search/movie?query="+searchString+"&api_key=YOUR_API_KEY")
 			.success(function(data) { 
 	              return data; 
 	            }) 
@@ -55,7 +55,7 @@ app.factory("getFilms", ['$http', function($http){
 
 	getFilms.film = function(filmId)
 	{
-		return $http.get("http://api.themoviedb.org/3/movie/"+ filmId +"?api_key=844fd8eb8902d0b4c467d44dabed5180")
+		return $http.get("http://api.themoviedb.org/3/movie/"+ filmId +"?api_key=YOUR_API_KEY")
 			.success(function(data) {
 	            return data; 
 	            }) 
